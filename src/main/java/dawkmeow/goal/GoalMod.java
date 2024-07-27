@@ -1,5 +1,6 @@
 package dawkmeow.goal;
 
+import dawkmeow.goal.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +13,6 @@ public class GoalMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
