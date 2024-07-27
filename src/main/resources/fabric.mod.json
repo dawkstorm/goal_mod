@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "goal_mod",
+	"version": "${version}",
+	"name": "Goal mod",
+	"description": "ГООООООООООЛ",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/goal_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dawkmeow.goal.GoalMod"
+		],
+		"client": [
+			"dawkmeow.goal.GoalModClient"
+		],
+		"fabric-datagen": [
+			"dawkmeow.goal.GoalModDataGenerator"
+		]
+	},
+	"mixins": [
+		"goal_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
