@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "goal_mod:block/cards_stack"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "goal_mod:block/cardstack_top",
+    "up": "goal_mod:block/cardstack_top",
+    "down": "goal_mod:block/cardstack_top",
+    "north": "goal_mod:block/cardstack_side",
+    "south": "goal_mod:block/cardstack_side",
+    "east": "goal_mod:block/cardstack_side",
+    "west": "goal_mod:block/cardstack_side"
+  }
+}

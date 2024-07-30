@@ -1,8 +1,14 @@
 package dawkmeow.goal;
 
+import dawkmeow.goal.block.ModBlocks;
+import dawkmeow.goal.entity.ModEntities;
+import dawkmeow.goal.entity.custom.BearEntity;
+import dawkmeow.goal.event.EventLandCallback;
 import dawkmeow.goal.item.ModItems;
+import dawkmeow.goal.itemGroup.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +19,12 @@ public class GoalMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerBlocks();
+		ModEntities.registerModEntities();
+		FabricDefaultAttributeRegistry.register(ModEntities.BEAR, BearEntity.createBearAttributes());
+
+
 	}
 }

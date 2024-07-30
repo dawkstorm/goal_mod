@@ -1,4 +1,6 @@
 {
   "item.goal_mod.ball": "BALL",
-  "item.goal_mod.gates": "Gates"
+  "item.goal_mod.gates": "Gates",
+  "block.goal_mod.cards_stack": "Cards stack",
+  "itemGroup.goal_mod.goal_group": "Goal"
 }
