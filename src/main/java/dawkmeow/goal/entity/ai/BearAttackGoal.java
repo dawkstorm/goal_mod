@@ -3,6 +3,7 @@ package dawkmeow.goal.entity.ai;
 import dawkmeow.goal.GoalMod;
 import dawkmeow.goal.entity.custom.BearEntity;
 import dawkmeow.goal.event.EventLandCallback;
+import dawkmeow.goal.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
@@ -11,6 +12,7 @@ import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.server.command.SetBlockCommand;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -40,7 +42,7 @@ public class BearAttackGoal extends MeleeAttackGoal {
         EventLandCallback.EVENT.register((e) -> {
             if(e == entity && entity.isJumpingToExplode()){
                 entity.setJumpingToExplode(false);
-                mob.getWorld().createExplosion(mob, mob.getX(),mob.getY(), mob.getZ(), 5, false, World.ExplosionSourceType.TNT);
+                mob.getWorld().createExplosion(mob, mob.getX(),mob.getY(), mob.getZ(), 10, false, World.ExplosionSourceType.TNT);
                 shoudCountTillNextJump = true;
             }
         });
@@ -73,6 +75,7 @@ public class BearAttackGoal extends MeleeAttackGoal {
     protected void performJumpAndExplode(){
         shoudCountTillNextJump = false;
         resetJumpCooldown();
+        entity.playSound(ModSounds.GOAL_BEAR_JUMP, 15f, 1f);
         entity.travel(new Vec3d(0, 2, 0));
         entity.addVelocity(0, 1.5d, 0);
         entity.setJumpingToExplode(true);
@@ -80,6 +83,7 @@ public class BearAttackGoal extends MeleeAttackGoal {
 
     protected void performAttack(LivingEntity lEntity){
         resetAttackCooldown();
+        entity.playSound(ModSounds.GOAL_BEAR_ATTACK, 15f, 1f);
         mob.swingHand(Hand.MAIN_HAND);
         mob.getWorld().breakBlock(new BlockPos(lEntity.getBlockX(), lEntity.getBlockY() - 1, lEntity.getBlockZ()), false);
         lEntity.travel(new Vec3d(0, 2, 0));

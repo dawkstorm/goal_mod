@@ -2,5 +2,11 @@
   "item.goal_mod.ball": "BALL",
   "item.goal_mod.gates": "Gates",
   "block.goal_mod.cards_stack": "Cards stack",
-  "itemGroup.goal_mod.goal_group": "Goal"
+  "itemGroup.goal_mod.goal_group": "Goal",
+  "sounds.goal_mod.goal_bear_attack": "GOOOOOOOOOOOOOL",
+  "entity.goal_mod.bear": "Bear",
+  "sounds.goal_mod.goal_bear_jump": "Bear jumps",
+  "item.goal_mod.vodka_bottle": "Vodka bottle",
+  "item.goal_mod.empty_vodka_bottle": "Empty vodka bottle",
+  "item.goal_mod.broken_vodka_bottle": "Broken vodka bottle"
 }

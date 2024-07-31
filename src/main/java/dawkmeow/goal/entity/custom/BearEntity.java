@@ -2,6 +2,7 @@ package dawkmeow.goal.entity.custom;
 
 import dawkmeow.goal.GoalMod;
 import dawkmeow.goal.entity.ai.BearAttackGoal;
+import dawkmeow.goal.sound.ModSounds;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
@@ -124,13 +125,13 @@ public class BearEntity extends HostileEntity {
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_HORSE_DEATH;
+        return ModSounds.GOAL_BEAR_DEATH;
     }
 
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_ZOMBIE_AMBIENT;
+        return ModSounds.GOAL_BEAR_AMBIENT;
     }
 
     @Override

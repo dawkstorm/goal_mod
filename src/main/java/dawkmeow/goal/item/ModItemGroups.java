@@ -1,8 +1,7 @@
-package dawkmeow.goal.itemGroup;
+package dawkmeow.goal.item;
 
 import dawkmeow.goal.GoalMod;
 import dawkmeow.goal.block.ModBlocks;
-import dawkmeow.goal.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -19,6 +18,9 @@ public class ModItemGroups {
                 entries.add(ModItems.BALL);
                 entries.add(ModItems.GATES);
                 entries.add(ModBlocks.СARDS_STACK);
+                entries.add(ModItems.VODKA_BOTTLE);
+                entries.add(ModItems.EMPTY_VODKA_BOTTLE);
+                entries.add(ModItems.BROKEN_VODKA_BOTTLE);
             }).build());
 
     public static void registerItemGroups(){

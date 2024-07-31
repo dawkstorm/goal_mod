@@ -1,0 +1,47 @@
+{
+  "goal_bear_attack": {
+    "subtitle": "sounds.goal_mod.goal_bear_attack",
+    "sounds": [
+      "goal_mod:goal_bear_attack"
+    ]
+  },
+
+  "goal_bear_jump": {
+    "subtitle": "sounds.goal_mod.goal_bear_jump",
+    "sounds": [
+      "goal_mod:goal_bear_jump"
+    ]
+  },
+
+  "goal_bear_ambient": {
+    "subtitle": "sounds.goal_mod.goal_bear_ambient",
+    "sounds": [
+      "goal_mod:bear_ambient1",
+      "goal_mod:bear_ambient2",
+      "goal_mod:bear_ambient3",
+      "goal_mod:bear_ambient4",
+      "goal_mod:bear_ambient5",
+      "goal_mod:bear_ambient6",
+      "goal_mod:bear_ambient7",
+      "goal_mod:bear_ambient8",
+      "goal_mod:bear_ambient9",
+      "goal_mod:bear_ambient10",
+      "goal_mod:bear_ambient11",
+      "goal_mod:bear_ambient12",
+      "goal_mod:bear_ambient13",
+      "goal_mod:bear_ambient14",
+      "goal_mod:bear_ambient15",
+      "goal_mod:bear_ambient16",
+      "goal_mod:bear_ambient17",
+      "goal_mod:bear_ambient18"
+    ]
+  },
+
+  "goal_bear_death": {
+    "subtitle": "sounds.goal_mod.goal_bear_ambient",
+    "sounds": [
+      "goal_mod:bear_death1",
+      "goal_mod:bear_death2"
+    ]
+  }
+}
