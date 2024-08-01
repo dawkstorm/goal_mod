@@ -3,9 +3,11 @@ package dawkmeow.goal;
 import dawkmeow.goal.block.ModBlocks;
 import dawkmeow.goal.entity.ModEntities;
 import dawkmeow.goal.entity.custom.BearEntity;
+import dawkmeow.goal.entity.custom.GatesEntity;
 import dawkmeow.goal.item.ModItems;
 import dawkmeow.goal.item.ModItemGroups;
 import dawkmeow.goal.sound.ModSounds;
+import dawkmeow.goal.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -24,6 +26,8 @@ public class GoalMod implements ModInitializer {
         ModBlocks.registerBlocks();
         ModEntities.registerModEntities();
         FabricDefaultAttributeRegistry.register(ModEntities.BEAR, BearEntity.createBearAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.GATES, GatesEntity.createGatesAttributes());
         ModSounds.registerSounds();
+        ModLootTableModifiers.modifyLootTables();
     }
 }

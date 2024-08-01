@@ -2,6 +2,7 @@ package dawkmeow.goal.item;
 
 import dawkmeow.goal.GoalMod;
 import dawkmeow.goal.entity.ModEntities;
+import dawkmeow.goal.item.custom.GatesSpawnItem;
 import dawkmeow.goal.item.custom.BrokenBottleItem;
 import dawkmeow.goal.item.custom.EmptyBottleItem;
 import dawkmeow.goal.item.custom.VodkaBottleItem;
@@ -14,7 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item BALL = registerItem("ball", new Item(new Item.Settings()));
-    public static final Item GATES = registerItem("gates", new Item(new Item.Settings()));
+    public static final Item GATES = registerItem("gates", new GatesSpawnItem(new Item.Settings()));
     public static final Item BEAR_SPAWN_EGG = registerItem("bear_spawn_egg", new SpawnEggItem(ModEntities.BEAR, 0x0b962e, 0xffffff, new Item.Settings()));
 
     public static final Item EMPTY_VODKA_BOTTLE = registerItem("empty_vodka_bottle",

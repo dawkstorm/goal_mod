@@ -1,5 +1,6 @@
 package dawkmeow.goal.block;
 import dawkmeow.goal.GoalMod;
+import dawkmeow.goal.block.custom.CardsStackBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -12,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block СARDS_STACK = registerBlock("cards_stack",
-            new Block(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET)));
+            new CardsStackBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

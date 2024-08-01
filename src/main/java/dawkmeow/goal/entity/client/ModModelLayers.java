@@ -7,4 +7,7 @@ import net.minecraft.util.Identifier;
 public class ModModelLayers {
     public static final EntityModelLayer BEAR =
             new EntityModelLayer(new Identifier(GoalMod.MOD_ID, "bear"), "main");
+
+    public static final EntityModelLayer GATES =
+            new EntityModelLayer(new Identifier(GoalMod.MOD_ID, "gates"), "main");
 }

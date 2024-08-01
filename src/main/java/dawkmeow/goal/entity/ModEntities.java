@@ -2,6 +2,7 @@ package dawkmeow.goal.entity;
 
 import dawkmeow.goal.GoalMod;
 import dawkmeow.goal.entity.custom.BearEntity;
+import dawkmeow.goal.entity.custom.GatesEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -15,6 +16,10 @@ public class ModEntities {
     public static final EntityType<BearEntity> BEAR = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(GoalMod.MOD_ID, "bear"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, BearEntity::new).dimensions(EntityDimensions.fixed(1f, 2.1f)).build());
+
+    public static final EntityType<GatesEntity> GATES = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(GoalMod.MOD_ID, "gates"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MISC, GatesEntity::new).dimensions(EntityDimensions.fixed(3f, 2f)).build());
 
     public static void registerModEntities() {
         GoalMod.LOGGER.info("Registering Entities for " + GoalMod.MOD_ID);
